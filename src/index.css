@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0b2434;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Karla;
+}
+
+div#tenzies-games {
+    width: 90%;
+    height: 90%;
+    max-width: 500px;
+    max-height: 500px;
+    background-color: #f5f5f5;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border-radius: 20px;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+button {
+    cursor: pointer;
+}
+
+.game-info {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.game-info h1 {
+    margin: 0 0 10px 0;
+    color: #2b283a;
+    font-size: 2.3rem;
+}
+
+.game-info p {
+    max-width: 400px;
+    color: #4a4e74;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.game-info span {
+    color: #2b283a;
+    font-weight: 700;
+}
+
+.btns-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin: 40px;
+}
+
+.btns-container button {
+    padding: 19px 25px;
+    border: none;
+    background-color: white;
+    color: #0b2434;
+    font-size: 1.5rem;
+    font-weight: 700;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px rgb(147, 147, 147);
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+}
+
+.btns-container button:hover {
+    box-shadow: 0px 0px 8px rgb(47, 47, 47);
+    -webkit-transform: translateY(-4px);
+    -moz-transform: translateY(-4px);
+    -ms-transform: translateY(-4px);
+    -o-transform: translateY(-4px);
+    transform: translateY(-4px);
+}
+
+.btns-container button.hold {
+    background-color: #59e391;
+}
+
+.roll-dice {
+    background-color: #5035ff;
+    border: none;
+    font-size: 1.7rem;
+    padding: 10px 30px;
+    color: white;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.game-start {
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.inputsLabel {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.inputsLabel input {
+    font-weight: 700;
+    font-family: Karla;
+    font-size: 1.4rem;
+    width: 100px;
+    padding: 5px;
+    text-align: center;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+    border-radius: 40px;
+    border: 1px solid grey;
+}
+
+.win-popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(19 5 79 / 91%);
+    padding: 20px;
+    font-family: Karla;
+    text-align: center;
+    width: 400px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border-radius: 20px;
+}
